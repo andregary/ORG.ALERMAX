@@ -74,7 +74,7 @@
                                             <li><a href="private/Modulo de estadistica/graphic.html">GRÁFICOS</a>
                                         </ul>
                                         <li><a href="private/pages/board.html">AGENDA</a></li>
-
+                                        <li><a href="private/Modulo de informacion/contact.html">CONTACTANOS</a></li>
                                         <li><a href="private/pages/notification.html">NOTIFICACIONES</a></li>
                                         <li> <img src="public/img/bg-img/campana.png" alt=""></a>
                                         </li>
@@ -375,7 +375,7 @@
         <div class="contact-form-area ">
             <form action="#" method="post">
                 <div class="row">
-                    <div class="col-6"><input type="text" class="form-control" id="name" placeholder="Nombre"></div>
+                    <div class="col-6"><input type="text" class="form-control" id="nombre" placeholder="Nombre"></div>
                     <div class="col-6"><input type="email" class="form-control" id="email" placeholder="E-mail"></div>
                 </div>
                 <div class="row">
@@ -383,7 +383,7 @@
                     <div class="col-6"><input type="text" class="form-control" id="telefono" placeholder="Telefono"></div>
                 </div>
                 <input type="text" class="form-control" id="asunto" placeholder="Asunto">
-                <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Descripción de la denuncia"></textarea>
+                <textarea name="message" class="form-control" id="mensaje" cols="30" rows="10" placeholder="Descripción de la denuncia"></textarea>
                 <button class="btn academy-btn mt-30" type="submit" id="solicitudFormButton">Enviar</button>
             </form>
         </div>
@@ -482,6 +482,29 @@
     <!-- ##### Footer Area Start ##### -->
 
     <!-- ##### All Javascript Script ##### -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        // Initialize Cloud Firestore through Firebase
+        firebase.initializeApp({
+            apiKey: "AIzaSyAm6jW5iSGPmpIyLFMhn2wSiClLTtt4BSE",
+            authDomain: "org-alermax.firebaseapp.com",
+            projectId: "org-alermax",
+            storageBucket: "org-alermax.appspot.com",
+            messagingSenderId: "969019599604",
+            appId: "1:969019599604:web:388bbe726bc64ac4b58ca1",
+            measurementId: "G-Q5L55JFT49"
+        });
+
+        var db = firebase.firestore();
+    </script>
+    
     <!-- jQuery-2.2.4 js -->
     <script src="public/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->

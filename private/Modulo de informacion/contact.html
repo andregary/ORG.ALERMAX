@@ -69,12 +69,12 @@
                                             <li><a href="../Modulo de estadistica/map.html">MAPA DE CALOR</a></li>
                                             <li><a href="../Modulo de estadistica/graphic.html">gráficos</a>
                                         </ul>
-                                        <li><a href="../pages/board.html">AGENDA</a></li>
+                                    <li><a href="../pages/board.html">AGENDA</a></li>
 
-                                        <li><a href="../Modulo de informacion/contact.html">Contactanos</a></li>
-                                        <li><a href="../pages/notification.html">Notificaciones</a></li>
-                                        <li> <img src="../../public/img/bg-img/campana.png" alt=""></a>
-                                        </li>
+                                    <li><a href="../Modulo de informacion/contact.html">Contactanos</a></li>
+                                    <li><a href="../pages/notification.html">Notificaciones</a></li>
+                                    <li> <img src="../../public/img/bg-img/campana.png" alt=""></a>
+                                    </li>
                                 </ul>
 
                             </div>
@@ -84,7 +84,8 @@
                         <!-- Calling Info -->
                         <div class="calling-info">
                             <div class="call-center">
-                                <a href="tel:+654563325568889"><i class="icon-telephone-2"></i> <span>(+51) 970-423-807</span></a>
+                                <a href="tel:+654563325568889"><i class="icon-telephone-2"></i> <span>(+51)
+                                        970-423-807</span></a>
                             </div>
                         </div>
                     </nav>
@@ -115,7 +116,10 @@
                                     <div class="section-heading text-left">
                                         <span>Estamos para ti las 24 horas</span>
                                         <h3>Contactanos</h3>
-                                        <p class="mt-30">Buscamos atender integralmente las denuncias de nuestros ciudadanos Peruanos, más ahora, que vivimos momentos tan difíciles a causa de la pandemia y todos sus desafíos e incertidumbres a causa de la delincuencia.</p>
+                                        <p class="mt-30">Buscamos atender integralmente las denuncias de nuestros
+                                            ciudadanos Peruanos, más ahora, que vivimos momentos tan difíciles a causa
+                                            de la pandemia y todos sus desafíos e incertidumbres a causa de la
+                                            delincuencia.</p>
                                     </div>
 
                                     <!-- Contact Social Info -->
@@ -157,10 +161,12 @@
                             <div class="col-12 col-lg-7">
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                                         <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                        <button class="btn academy-btn mt-30" type="submit">Enviar</button>
+                                        <textarea name="message" class="form-control" id="mensaje" cols="30" rows="10"
+                                            placeholder="Mensaje"></textarea>
+                                        <button id="contactoFormButton" class="btn academy-btn mt-30"
+                                            type="submit">Enviar</button>
                                     </form>
                                 </div>
                             </div>
@@ -183,7 +189,8 @@
                             <div class="widget-title">
                                 <a href="#"><img src="../../public/img/core-img/logo2.png" alt=""></a>
                             </div>
-                            <p>Actuar con claridad de manera franca y abierta, tanto en la relación con las personas como en la gestión de los procesos y visibilidad en el manejo de la información.</p>
+                            <p>Actuar con claridad de manera franca y abierta, tanto en la relación con las personas
+                                como en la gestión de los procesos y visibilidad en el manejo de la información.</p>
                             <div class="footer-social-info">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -214,7 +221,8 @@
                                 <h6>Gallery</h6>
                             </div>
                             <div class="gallery-list d-flex justify-content-between flex-wrap">
-                                <a href="../../public/img/bg-img/gallery1.jpg" class="gallery-img" title="Gallery Image 1"><img src="../../public/img/bg-img/bg-1.jpg" alt=""></a>
+                                <a href="../../public/img/bg-img/gallery1.jpg" class="gallery-img"
+                                    title="Gallery Image 1"><img src="../../public/img/bg-img/bg-1.jpg" alt=""></a>
 
 
 
@@ -253,7 +261,8 @@
                             Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script>Pagina web original <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://certus.edu.pe/" target="_blank">Certus</a>
+                            </script>Pagina web original <i class="fa fa-heart-o" aria-hidden="true"></i> por <a
+                                href="https://certus.edu.pe/" target="_blank">Certus</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
@@ -262,6 +271,29 @@
         </div>
     </footer>
     <!-- ##### Footer Area Start ##### -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        // Initialize Cloud Firestore through Firebase
+        firebase.initializeApp({
+            apiKey: "AIzaSyAm6jW5iSGPmpIyLFMhn2wSiClLTtt4BSE",
+            authDomain: "org-alermax.firebaseapp.com",
+            projectId: "org-alermax",
+            storageBucket: "org-alermax.appspot.com",
+            messagingSenderId: "969019599604",
+            appId: "1:969019599604:web:388bbe726bc64ac4b58ca1",
+            measurementId: "G-Q5L55JFT49"
+        });
+
+        var db = firebase.firestore();
+    </script>
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
